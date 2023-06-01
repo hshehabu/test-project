@@ -1,0 +1,23 @@
+body{
+    background-color: #f2f2f2;
+}
+.container{
+    
+    margin: 5px;
+    border-top:1px solid rgb(30, 30, 192);
+    height: auto;
+    padding: 10px;
+    background-color: white;
+}
+.fields{
+    display: flex;
+    justify-content: space-between;
+}
+.field-group{
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+.sidebyside{
+    display: flex;
+}

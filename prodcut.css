@@ -31,6 +31,7 @@ body {
   color: white;
   padding: 0.5rem;
   border: none;
+  cursor: pointer;
 }
 
 table {
@@ -58,4 +59,23 @@ tr:nth-child(even) {
 }
  .total{
  
+}
+hr{
+    width: 95%;
+}
+.discount{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-disc{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+.left-disc div{
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
 }

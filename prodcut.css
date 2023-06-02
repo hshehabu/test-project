@@ -8,6 +8,8 @@ body {
   padding: 10px;
   background-color: white;
   border-radius: 5px;
+  position: relative;
+  overflow: hidden;
 }
 .fields {
   display: flex;
@@ -57,25 +59,43 @@ th {
 tr:nth-child(even) {
   background-color: #f9f9f9;
 }
- .total{
- 
+.total {
+  float: right;
 }
-hr{
-    width: 95%;
+hr {
+  width: 95%;
 }
-.discount{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.discount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.left-disc{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 1rem;
+.left-disc {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
 }
-.left-disc div{
-    display: flex;
-    flex-direction: column;
-    gap: .3rem;
+.left-disc div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.payment {
+  display: flex;
+  justify-content: space-between;
+}
+.payment-left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom:1rem ;
+}
+.payment-right{
+  position: relative;
+  float :right;
 }

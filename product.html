@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="prodcut.css" />
-    <script src="https://kit.fontawesome.com/ecac05f401.js" crossorigin="anonymous"></script>
+    <!-- <script
+      src="https://kit.fontawesome.com/ecac05f401.js"
+      crossorigin="anonymous"
+    ></script> -->
     <title>Product Purchase</title>
   </head>
 
@@ -112,7 +115,7 @@
       </div>
       <div class="container">
         <div class="discount">
-          <div  class="left-disc">
+          <div class="left-disc">
             <div>
               <label for="disc-type">Discount Type:</label>
               <select name="disc-type">
@@ -127,13 +130,41 @@
             </div>
           </div>
 
-          <div class="right-disc"><i class="fa fa-rocket"></i> Discount: 0000</div>
+          <div class="right-disc">
+            <i class="fa fa-rocket"></i> Discount: 0000
+          </div>
         </div>
       </div>
       <div class="container">
-
+        <p>Add payment</p>
+        <div class="payment">
+          <div class="payment-left">
+            <p>Advance Balance: 0</p>
+            <label for="amount">Amount:</label>
+            <input type="text" name="amount" id="amount" />
+            <label for="payment-method">Payment Method:</label>
+            <select name="payment-method">
+              <option value="cash">Cash</option>
+              <option value="payment2">payment2</option>
+              <option value="payment3">payment3</option>
+            </select>
+            <label for="payment-note">Payment note:</label>
+          </div>
+          <div>
+            <label for="paid-on">paid on:</label>
+            <input type="datetime-local" name="paid-on" id="paid-on" />
+          </div>
+        </div>
+        <textarea name="payment-note" id="payment-note" rows="4" cols="50"></textarea>
+        <hr>
+        <div class="payment-right">
+          <p>Payment due: $0.00</p>
+          <button type="submit">Save</button>
+        </div>
       </div>
     </section>
-    <section id="footer"></section>
+    <section id="footer">
+
+    </section>
   </body>
 </html>
